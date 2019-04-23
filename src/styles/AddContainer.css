@@ -1,0 +1,42 @@
+.form {
+    border: 2px solid black;
+    padding: 15px;
+    margin: 20px;
+    width: 280px;
+    height: 320px;
+    position: relative;
+}
+
+.form textarea {
+    width: 64%;
+    height: 100px;
+}
+
+.form button {
+    margin-left: 70px;
+    border: 2px solid black;
+    background-color: white;
+    padding: 5px;
+    margin-top: 100px;
+}
+
+.form input {
+    position: absolute;
+    right: 40px;
+    width: 65%;
+    border: 2px solid black;
+
+}
+
+.form textarea{
+    position: absolute;
+    right: 40px;
+    border: 2px solid black;
+}
+
+.funkyContainer {
+    top: 25%;
+    left: 50%;
+    position: absolute;
+    margin: -140px 0 0 -160px;
+}

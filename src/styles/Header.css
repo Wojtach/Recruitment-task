@@ -1,0 +1,28 @@
+.header {
+    padding: 4px;
+    margin: 15px;
+    height: 60px;
+    width: 90%;
+    display: flex;
+    position: relative;
+    
+}
+
+#name {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 30px
+}
+
+#addbtn {
+    position: absolute;
+    right: 5px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#back {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}

@@ -1,0 +1,15 @@
+div.app {
+  margin: 0 auto;
+  display: block;
+  width: 92%;
+}
+
+#spinner {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+}
+a:visited, a:link, a:hover
+{
+    text-decoration: none;
+}

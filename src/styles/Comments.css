@@ -1,0 +1,25 @@
+
+/* ---------------------------------- */
+div.comment {
+    border: 2px solid black;
+    padding: 4px;
+    margin: 15px;
+    height: 60px;
+    width: 90%;
+    display: flex;
+    position: relative;
+}
+
+#textcomment {
+    position: absolute;
+    bottom: 3px;
+    padding: 5px;
+}
+
+#useremail {
+    position: absolute;
+    right: 0px;
+    padding: 5px;
+    text-decoration: underline;
+    color: blue;
+}
