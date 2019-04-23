@@ -1,4 +1,4 @@
-import { asyncActionCreatorFactory } from '../HOR/HOR';
+import { asyncActionCreatorFactory } from '../utils/HOR';
 import { SET_ID, USERS, POSTS, COMMENTS } from './actionTypes';
 
 export const fetchUsersAction = asyncActionCreatorFactory(
