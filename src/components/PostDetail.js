@@ -30,6 +30,7 @@ class PostDetail extends Component {
                 <Header match={this.props.match} />
                 <h1><strong>{post.title}</strong></h1>
                 <div>{post.body}</div>
+                <br />
                 <button onClick={this.props.toggleComments}>{this.props.areCommentsVisible ? 'Hide comments' : 'Show comments'}</button>
                 <Link to={this.props.match.url + '/addComment'}><button>Add comment</button></Link>
                 <Link to={`/user/${post.userId}`}><button onClick={() => this.props.handleDeletePost(post.id)}>Delete post</button></Link>
