@@ -45,11 +45,11 @@ class PostDetailContainer extends Component {
 }
 
 PostDetailContainer.propTypes = {
-    comments: PropTypes.array.isRequired,
-    isLoading: PropTypes.bool.isRequired,
-    posts: PropTypes.array.isRequired,
-    fetchComments: PropTypes.func.isRequired,
-    match: PropTypes.object.isRequired
+    comments: PropTypes.array,
+    isLoading: PropTypes.bool,
+    posts: PropTypes.array,
+    fetchComments: PropTypes.func,
+    match: PropTypes.object
 }
 
 const mapStateToProps = state => ({

@@ -21,10 +21,10 @@ class PostsContainer extends Component {
 }
 
 PostsContainer.propTypes = {
-    posts: PropTypes.array.isRequired,
-    isLoading: PropTypes.bool.isRequired,
-    fetchPosts: PropTypes.func.isRequired,
-    match: PropTypes.object.isRequired
+    posts: PropTypes.array,
+    isLoading: PropTypes.bool,
+    fetchPosts: PropTypes.func,
+    match: PropTypes.object
 }
 
 const mapStateToProps = state => ({

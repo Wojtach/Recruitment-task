@@ -16,8 +16,8 @@ const Post = (props) => {
 }
 
 Post.propTypes = {
-    post: PropTypes.object.isRequired,
-    match: PropTypes.object.isRequired
+    post: PropTypes.object,
+    match: PropTypes.object
 }
 
 export default Post;

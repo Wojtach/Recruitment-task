@@ -30,8 +30,8 @@ class Posts extends Component {
     }
 }
 Posts.propType = {
-    isLoading: PropTypes.bool.isRequired,
-    posts: PropTypes.array.isRequired,
+    isLoading: PropTypes.bool,
+    posts: PropTypes.array,
 }
 
 export default Posts;

@@ -32,9 +32,9 @@ class Header extends Component {
 }
 
 Header.propTypes = {
-    users: PropTypes.array.isRequired,
-    match: PropTypes.object.isRequired,
-    addButton: PropTypes.bool.isRequired
+    users: PropTypes.array,
+    match: PropTypes.object,
+    addButton: PropTypes.bool
 }
 
 const mapStateToProps = state => ({

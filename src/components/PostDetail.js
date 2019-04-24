@@ -42,11 +42,10 @@ class PostDetail extends Component {
 }
 
 PostDetail.propTypes = {
-    comments: PropTypes.array.isRequired,
-    postsList: PropTypes.array.isRequired,
-    toggleComments: PropTypes.func.isRequired,
-    areCommentsVisible: PropTypes.bool.isRequired,
-    handleModalView: PropTypes.func.isRequired
+    comments: PropTypes.array,
+    postsList: PropTypes.array,
+    toggleComments: PropTypes.func,
+    areCommentsVisible: PropTypes.bool,
 }
 
 export default PostDetail;

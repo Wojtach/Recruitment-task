@@ -24,7 +24,7 @@ const User = (props) => {
 }
 
 User.propTypes = {
-    user: PropTypes.object.isRequired
+    user: PropTypes.object
 }
 
 export default User;

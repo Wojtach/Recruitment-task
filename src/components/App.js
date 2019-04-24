@@ -33,8 +33,8 @@ class App extends Component {
 }
 
 App.propTypes = {
-  users: PropTypes.array.isRequired,
-  isLoading: PropTypes.bool.isRequired,
+  users: PropTypes.array,
+  isLoading: PropTypes.bool,
 }
 
 
