@@ -16,7 +16,7 @@ class AddCommentContainer extends Component {
     }
 
     messages = {
-        name_incorrect: 'name length must be in 3-70 characters',
+        name_incorrect: 'Name length must be in 3-70 characters',
         body_incorrect: 'Body length must be in 10-300 characters',
         email_incorrect: 'Incorrect e-mail'
     }
@@ -119,18 +119,20 @@ class AddCommentContainer extends Component {
                     <h1>Add Comment</h1><hr />
                     <label>Name
                     <input type="text" onChange={this.handleChange} value={this.state.name} name='name' />
-                        {this.state.errors.name && <span>{this.messages.name_incorrect}</span>}
                     </label><br /><br />
                     <label>E-mail
                     <input type="text" onChange={this.handleChange} value={this.state.email} name='email' />
-                        {this.state.errors.email && <span>{this.messages.email_incorrect}</span>}
                     </label><br /><br />
                     <label>Body
                     <textarea onChange={this.handleChange} type="text" value={this.state.body} name='body' />
-                        {this.state.errors.body && <span>{this.messages.body_incorrect}</span>}
                     </label><br />
                     <button >Save</button>
                     <Link to={`/user/${this.userId}/${this.postId}`}><button>Cancel</button></Link>
+                    <div className='errors'>
+                        {this.state.errors.name && <span>{this.messages.name_incorrect}</span>}<br />
+                        {this.state.errors.email && <span>{this.messages.email_incorrect}</span>}<br />
+                        {this.state.errors.body && <span>{this.messages.body_incorrect}</span>}
+                    </div>
                 </form>
             </div>
         );

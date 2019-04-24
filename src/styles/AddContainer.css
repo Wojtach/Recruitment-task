@@ -3,7 +3,7 @@
     padding: 15px;
     margin: 20px;
     width: 280px;
-    height: 320px;
+    height: 360px;
     position: relative;
 }
 
@@ -39,4 +39,11 @@
     left: 50%;
     position: absolute;
     margin: -140px 0 0 -160px;
+}
+
+.errors {
+    color: red;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
 }

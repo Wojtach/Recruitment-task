@@ -103,14 +103,16 @@ class AddPostContainer extends Component {
                     <h1>Add Post</h1><hr />
                     <label>Title
                     <input type="text" onChange={this.handleChange} value={this.state.title} name='title' />
-                        {this.state.errors.title && <span>{this.messages.title_incorrect}</span>}
                     </label><br /><br />
                     <label>Body
                     <textarea onChange={this.handleChange} type="text" value={this.state.body} name='body' />
-                        {this.state.errors.body && <span>{this.messages.body_incorrect}</span>}
                     </label><br />
                     <button >Save</button>
                     <Link to={`/user/${this.id}`}><button>Cancel</button></Link>
+                    <div className='errors'>
+                        {this.state.errors.title && <span>{this.messages.title_incorrect}</span>}<br />
+                        {this.state.errors.body && <span>{this.messages.body_incorrect}</span>}
+                    </div>
                 </form>
             </div>
         );
